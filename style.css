@@ -1,4 +1,8 @@
-li {
+ html{
+   scroll-behavior: smooth;
+   box-sizing: border-box;
+ }
+ li {
   
     display: inline-block;
     margin:20px;
