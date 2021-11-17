@@ -21,7 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <div class="contactbox">
     <div class="row">
-        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true" class="col s12">
+        <form name="contact" method="POST"  data-netlify="true" class="col s12">
           <input type="hidden" name="form-name"  value="contact">
           <div class="row">
             <div class="input-field col s12"> 
@@ -58,5 +58,47 @@
         </form>
       </div>
     </div>
-</body>
+    <h2 id="title">Javascript Practice </h2> 
+    <button id="btn">Click me  </button> 
+    <br><br><br>
+    <p class="list">This is a statement </p>
+    <p class="list">This is a statement </p>
+    <p class="list">This is a statement </p>
+    <p class="list">This is a statement </p>
+    <button id="btn2">Check me </button>
+    <br><br><br>
+    <button id="">profile</button>
+    <!--empty html element below-->
+    <p id="box"></p>
+    <p id="box2"></p>
+    <br><br><br>
+    <input type="text" id="user">
+    <button id="userName">Enter</button>
+    <p id="box3"></p>
+    <br><br><br>
+    <h2>Grocery</h2>
+    <input type="text" id="addlist">
+    <button id="add">add</button>
+    <p id="box4"></p>
+    <br><br><br>
+     
+    <script>
+      document.getElementById("btn").addEventListener("click",changecolor);
+
+      function changecolor () {
+        document.getElementById("title").style.color = "red";     
+      }
+      document.getElementById("btn2").addEventListener("click",newstyle);
+      function newstyle () {
+        let paragraphs = document.getElementsByClassName("list");
+      for (i=0; i < paragraphs.length; i++) [
+        paragraphs[2].style.backgroundColor = "green"
+      ]
+          
+      }
+       
+    </script>
+
+
+
 </html>
